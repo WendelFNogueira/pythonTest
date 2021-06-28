@@ -1,0 +1,12 @@
+Test #1
+Download: 12180.04 Kb/s
+Upload: 962.45 Kb/s
+Ping: 18.523
+Test #2
+Download: 12327.74 Kb/s
+Upload: 974.45 Kb/s
+Ping: 18.381
+Test #3
+Download: 11432.83 Kb/s
+Upload: 856.55 Kb/s
+Ping: 18.443

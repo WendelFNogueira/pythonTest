@@ -7,11 +7,11 @@ from selenium.webdriver.common.keys import Keys
 #Navegar até o whatsapp web
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("https://web.whatsapp.com/")
-time.sleep(5)
+time.sleep(15)
 #Definir contatos/grupos e mensagem a ser enviada
 contatos = ['Dev Test']
 mensagem = open("biblia.txt", 'r', encoding='utf-8')
-mensagem = mensagem.readline()
+mensagem = mensagem.readlines()
 
 
 #Buscar contatos/grupos
@@ -27,8 +27,8 @@ def enviar_mensagem(mensagem):
     campo_mensagem = driver.find_elements_by_xpath('//div[contains(@class, "copyable-text selectable-text")]')  
     campo_mensagem[1].click()  
     time.sleep(3)
-    for message in range(len(mensagem)):
-        campo_mensagem[1].send_keys(print(mensagem))
+    for message of mensagem:
+        campo_mensagem[1].send_keys(print(message))
         campo_mensagem[1].send_keys(Keys.ENTER)
 
 for contato in contatos:
